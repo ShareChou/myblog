@@ -29,4 +29,5 @@ urlpatterns = [
     path('about/', views.about, name='about'),  # 联系我们单页
     path('ueditor/', include('DjangoUeditor.urls')),
     re_path('^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    path('^accounts/', include('users.urls')),
 ]

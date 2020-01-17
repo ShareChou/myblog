@@ -6,7 +6,7 @@ from .models import Banner, Category, Tag, Article, Link, Recommend
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     # 文章列表里显示想要显示的字段
-    list_display = ('id', 'category', 'title', 'recommend', 'user', 'views', 'created_time')
+    list_display = ('id', 'category', 'title', 'recommend', 'author', 'views', 'created_time')
     # 满50条数据就自动分页
     list_per_page = 50
     # 后台数据列表排序方式

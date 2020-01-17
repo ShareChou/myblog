@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
 from DjangoUeditor.models import UEditorField
 
 
@@ -55,7 +55,7 @@ class Article(models.Model):
                         settings={}, command=None, blank=True
                         )
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='作者')
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name='作者')
 
     """
     文章作者，这里User是从django.contrib.auth.models导入的。
