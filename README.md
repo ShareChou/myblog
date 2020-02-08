@@ -1,2 +1,2 @@
 # myblog
-基于的Django的blog
+基于Django的blog
