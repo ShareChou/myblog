@@ -2,17 +2,16 @@
 {% block content %}
     <div id="main-container" class="container clearfix">
         <section class="post-left">
-<!--
+        <!--
             <div class="row">
-
-            {% for b in banner %}
-            <li class="slide fix-width">
-                <a href="{{ b.link_url }}" title="{{ b.text_info }}">
-                <img src="{% url 'index' %}media/{{ b.img }}" srcset="{% url 'index' %}media/{{ b.img }}" alt="{{ b.text_info }}"
-                        class="wp-post-image" width="370" height="290"/></a>
-                <span class="text ani-left"><strong>{{ b.text_info }}</strong></span>
-            </li>
-            {% endfor %}
+                {% for b in banner %}
+                <li class="slide fix-width">
+                    <a href="{{ b.link_url }}" title="{{ b.text_info }}">
+                    <img src="{% url 'index' %}media/{{ b.img }}" srcset="{% url 'index' %}media/{{ b.img }}" alt="{{ b.text_info }}"
+                            class="wp-post-image" width="370" height="290"/></a>
+                    <span class="text ani-left"><strong>{{ b.text_info }}</strong></span>
+                </li>
+                {% endfor %}
 
             <div class="col-md-6">
                 <div class="hotread ">
@@ -26,10 +25,15 @@
                     {% endfor %}
                 </div>
             </div>
-
         </div>
+<<<<<<< HEAD
     -->
         <!-- /文章列表 -->
+=======
+        -->
+
+            <!-- /文章列表 -->
+>>>>>>> origin/master
             <div class="index-main clearfix">
                 <div class="main-title">
                     <h4 class="post-left-title fl">最新文章</h4>
@@ -60,10 +64,16 @@
                             </div>
                         </div>
                     {% endfor %}
+<<<<<<< HEAD
                 </div>
             </div>
+=======
 
-                <!-- /文章列表 -->
+>>>>>>> origin/master
+
+                </div>
+
+            </div>
         </section>
 
         <!-- /post-left -->
@@ -78,9 +88,6 @@
                         <li><a href="{% url 'index' %}show-{{ h.id }}.html" title="{{ h.title }}">{{ h.title }}</a></li>
 
                     {% endfor %}
-
-
-
                 </ol>
             </section>
             </section>
